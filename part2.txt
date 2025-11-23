@@ -1,0 +1,29 @@
+console.log("Part 2: Essay Questions")
+// 1.What is the difference between forEach and for...of? When would you use each?')
+//forEach هي لوب تنفذ فانكشن معينه علي عنصر عنصر في الاراي بستخدمها لما بكون عايز انفذ حاجات معينه علي كل عنصر 
+//for..of عامله زي forEach في بقيت اللغات ال هو باخد العنصر واحطه في variable واطبق عليه اي حاجه زي map 
+
+// 2.What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples.
+// Hosting ال بيحصل ان JS بتعمل declarations للفانكشن و variable الاول يعني انا ممكن اعمل call لي الفانكشن قبل ما اكتبها 
+/**sayHello();
+function sayHello() {
+  console.log("Hello!");
+}
+**/
+//Temporal Dead Zone بتحصل مع let and const لازم اعمل initialization الاول وبعدها استخدم المتغير او الفانكشن 
+/**const sayHello=function (){
+  console.log("Hello")
+}
+sayHello()**/
+
+// 3.What are the main differences between == and ===?
+// == بتقارن بين اتنين variable وعشان تطلع true بيحول نوعهم تلقائيًا لو مختلفين ويقارن
+// === بيقارن بين القيم ونوعها عشان يرجع true لازم يكون النوع والقيمة نفسهم 
+
+// 4.Explain how try-catch works and why it is important in async operations.
+//try ديه بكتب جواها logic بتاعي بحيث اقدر اهندل الايرور لو حصل ايرور معين بيروح لي catch وده بيسهل عليا اعرف الايرور بسبب ايه واقدر اتعامل معاه 
+
+// 5.What’s the difference between type conversion and coercion?
+// conversion ديه ال انا ببقي قاصد احول type لي type تاني زي ما عملت في السؤال رقم 1
+// coercion ده تحويل بيحصل من اللغة نفسها بتحصل مثلا لو جعت رقم استرنج مع رقم عادي 
+
